@@ -1,14 +1,3 @@
-library(readxl)
-SolarPrediction <- read_excel("Data/SolarPrediction.xlsx")
-x1 <- SolarPrediction$Temperature
-x2 <- SolarPrediction$Pressure
-x3 <- SolarPrediction$Humidity
-x4 <- SolarPrediction$WindDirection
-x5 <- SolarPrediction$Speed
-
-xi <- list(x1, x2, x3, x4, x5)
-y <- SolarPrediction$Radiation
-
 kukush.lm <- function(y, list.x, Vdelta = NULL, ForPredict = FALSE) {
 
   n <- lengths(list.x[1])
@@ -104,7 +93,7 @@ kukush.lm <- function(y, list.x, Vdelta = NULL, ForPredict = FALSE) {
     matrixX <- list(matrix.X)
     regres <- append(regres, matrixX)
   }
-  print(regres)
+
   return(regres)
 }
 kukush.lm(y, xi, NULL)

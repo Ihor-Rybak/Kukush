@@ -46,7 +46,6 @@ predict <- function(regres, newdata, interval= 'None') {
     result <- data.frame(cbind(c(fitted), c(lwr), c(upr)))
     colnames(result) <- c('fit', 'lwr', 'upr')
 
-    print(result)
     return(result)
   }
 
@@ -77,6 +76,3 @@ predict <- function(regres, newdata, interval= 'None') {
 
   return(fitted)
 }
-
-predict(model, bloodpressure, 'confidence')
-
