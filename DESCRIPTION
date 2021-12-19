@@ -1,0 +1,13 @@
+Package: kukush
+Title: Linear models with classic errors
+Version: 0.0.0.9000
+Authors@R: person("Ihor", "Rybak", email = "rybak.ihor@chnu.edu.ua",
+                  role = c("aut", "cre"))
+Description: Used to establish linear regression models and summarize the results of various model selection functions.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Imports:
+    matlib, expm
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
